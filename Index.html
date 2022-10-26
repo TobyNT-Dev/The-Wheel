@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjulet | +18 Edition</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/app.js" defer></script>
+    <link rel="icon" href="./assets/visuals/img/dot-icon.png">
+</head>
+<body>
+    <div id="alertContainer">
+        
+        <p id="alertText">Du har nu været igennem alle forskellige konsekvenser.<button onclick="resetDares()">ok - start forfra!</button></p>
+    </div>
+    <section class="dare-container">
+        <p id="dareText">Lad resten af gruppen DM en person på din Instagram!</p>
+        <p class="secure">Drik Ansvarligt!</p>
+        <p class="credits">Developed by Tobias Thy -👻@tobythy</p>
+    </section>
+    <section class="prize-list-container">
+        <ul>
+            <li>Konsekvens!<span id="option-1"> ◄</span></li>
+            <li>Drik en tår!<span id="option-2"> ◄</span></li>
+            <li>Fælles Skål!<span id="option-3"> ◄</span></li>
+            <li>Uddel 5 slurke!<span id="option-4"> ◄</span></li>
+        </ul>
+    </section>
+    <section id="root-wheel-container">
+        <img class="rotate-phone" src="./assets/visuals/svg/turn-phone-around.svg" alt="Rotate Phone Icon">
+        <p class="game-version">+18 Edition</p>
+        <div id="headerSvg">
+            <img src="./assets/visuals/svg/the-header.svg" />
+        </div>
+        <div class="wheel-container">
+            <div id="needleSvg">
+                <img src="./assets/visuals/svg/the-needle.svg" />
+            </div>
+            <div id="wheelSvg">
+                <img id="spinThis" src="./assets/visuals/svg/the-wheel.svg" />
+            </div>
+        </div>
+        <div class="lower-content">
+            <button onclick="rollWheel()">Spin The Wheel!</button>
+        </div>
+    </section>
+</body>
+</html>

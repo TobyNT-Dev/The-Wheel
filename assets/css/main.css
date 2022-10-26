@@ -1,0 +1,248 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@keyframes text-blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  background-color: rgb(20, 20, 20);
+  overflow: hidden;
+}
+
+#root-wheel-container .rotate-phone {
+  display: none;
+}
+#root-wheel-container .game-version {
+  top: 8vw;
+  left: 14vw;
+  position: absolute;
+  font-size: 2vw;
+  color: white;
+  font-family: "Bebas Neue";
+}
+#root-wheel-container #headerSvg {
+  top: 3vw;
+  width: 26vw;
+  z-index: 1;
+}
+#root-wheel-container #headerSvg img {
+  position: absolute;
+  width: 28vw;
+  top: 2.5vw;
+}
+#root-wheel-container .wheel-container {
+  position: absolute;
+  margin-left: 27vw;
+}
+#root-wheel-container .wheel-container #needleSvg {
+  z-index: 5;
+  display: block;
+  margin: auto;
+  width: 45vw;
+  position: relative;
+  top: 5vw;
+}
+#root-wheel-container .wheel-container #wheelSvg {
+  z-index: 2;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: -40.3vw;
+  width: 45vw;
+}
+#root-wheel-container .wheel-container #wheelSvg img {
+  transition: 8s cubic-bezier(0.36, 0.01, 0.13, 0.99);
+  transform: rotate(0deg);
+}
+#root-wheel-container .lower-content {
+  z-index: 10;
+  top: 45.5vw;
+  display: block;
+  position: relative;
+}
+#root-wheel-container .lower-content button {
+  margin: auto;
+  display: block;
+  background-color: #FF0A58;
+  border: none;
+  font-size: 5vw;
+  color: white;
+  font-family: "Bebas Neue";
+  padding: 0.4vw 1.5vw 0vw 1.5vw;
+  transition: 300ms;
+}
+#root-wheel-container .lower-content button:hover {
+  transition: 300ms;
+  color: #FF0A58;
+  background-color: white;
+  cursor: pointer;
+}
+
+.prize-list-container {
+  position: relative;
+  top: 18vw;
+  left: 3vw;
+}
+.prize-list-container ul {
+  left: 2.5vw;
+  position: absolute;
+}
+.prize-list-container ul li {
+  font-style: italic;
+  font-size: 3vw;
+  color: white;
+  font-family: "Bebas Neue";
+  line-height: 5vw;
+}
+.prize-list-container ul li:nth-child(1) {
+  color: #FF0A58;
+  list-style-type: "😳";
+}
+.prize-list-container ul li:nth-child(1)::marker {
+  color: #FF0A58;
+}
+.prize-list-container ul li:nth-child(2) {
+  color: #B20059;
+  list-style-type: "🍺";
+}
+.prize-list-container ul li:nth-child(2)::marker {
+  color: #B20059;
+}
+.prize-list-container ul li:nth-child(3) {
+  list-style-type: "🍻";
+  color: #FF8ACA;
+}
+.prize-list-container ul li:nth-child(3)::marker {
+  color: #FF8ACA;
+}
+.prize-list-container ul li:nth-child(4) {
+  list-style-type: "🎉";
+  color: #F15A24;
+}
+.prize-list-container ul li:nth-child(4)::marker {
+  color: #F15A24;
+}
+.prize-list-container ul li span {
+  color: white;
+  opacity: 0;
+}
+
+.dare-container {
+  left: 71vw;
+  top: 18vw;
+  position: relative;
+}
+.dare-container #dareText {
+  opacity: 0;
+  text-shadow: rgba(255, 255, 255, 0.7411764706) 0px 0px 15px;
+  font-style: italic;
+  width: 25vw;
+  display: inline-block;
+  position: absolute;
+  font-size: 2.5vw;
+  color: white;
+  font-family: "Bebas Neue";
+}
+.dare-container .secure {
+  left: -27.5vw;
+  top: 33vw;
+  position: absolute;
+  font-size: 2vw;
+  color: rgb(77, 77, 77);
+  font-family: "Bebas Neue";
+}
+.dare-container .credits {
+  top: -20vw;
+  position: absolute;
+  font-size: 2vw;
+  color: rgb(49, 49, 49);
+  font-family: "Bebas Neue";
+}
+
+#alertContainer {
+  display: none;
+  z-index: 17;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+#alertContainer #alertText {
+  z-index: 18;
+  border-radius: 0.4vw;
+  padding: 1vw 3vw 1vw 3vw;
+  margin-top: 15vw;
+  display: inline-block;
+  font-size: 3vw;
+  color: white;
+  font-family: "Bebas Neue";
+  background-color: rgba(0, 0, 0, 0.7529411765);
+}
+#alertContainer button {
+  position: relative;
+  z-index: 19;
+  margin: 5vw auto 2vw auto;
+  display: block;
+  background-color: #F15A24;
+  border: none;
+  border-radius: 0.2vw;
+  font-size: 3vw;
+  color: white;
+  font-family: "Bebas Neue";
+  padding: 0.3vw 1.5vw 0vw 1.5vw;
+  transition: 300ms;
+}
+#alertContainer button:hover {
+  transition: 300ms;
+  color: #F15A24;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 660px) {
+  #root-wheel-container {
+    display: initial;
+  }
+  #root-wheel-container .rotate-phone {
+    display: block;
+    margin: 40vw 25% 0vw auto;
+    width: 50vw;
+  }
+  #root-wheel-container .game-version {
+    display: none;
+  }
+  #root-wheel-container #headerSvg {
+    display: none;
+  }
+  #root-wheel-container .wheel-container {
+    display: none;
+  }
+  #root-wheel-container .lower-content {
+    display: none;
+  }
+  .prize-list-container {
+    display: none;
+  }
+  .dare-container {
+    display: none;
+  }
+  #alertContainer {
+    display: none;
+  }
+}
