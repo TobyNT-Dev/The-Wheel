@@ -1,6 +1,19 @@
 let wheelPosition = 0
 let spinningProgress = false
 
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("sw.js")
+      .then((registration) => {
+        console.log("index.js: sw running");
+      })
+      .catch((error) => {
+        console.log("index.js: sw reg fail");
+        console.log(error);
+      });
+  } else {
+}
+
 const daresConst = [
     "Gruppen vælger et ord du skal afslutte alle dine sætninger med indtil det er din tur igen!",
     "Lad resten af gruppen DM en person på din Instagram!", 

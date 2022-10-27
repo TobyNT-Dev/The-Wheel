@@ -1,0 +1,32 @@
+{
+    "theme_color": "#FF0A58",
+    "background_color": "#202020",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "description": "A fun Drinking game to play with friends, for when the party needs some spice, or when you are just getting started!",
+    "short_name": "Wheel!",
+    "name": "The Wheel!",
+    "icons": [
+        {
+            "src": "/assets/visuals/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/visuals/icons/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/visuals/icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/visuals/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
