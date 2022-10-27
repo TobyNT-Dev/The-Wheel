@@ -29,7 +29,7 @@ body {
         font-family: "Bebas Neue";
     }
     #headerSvg {
-        top: 3vw;
+        margin-top: -6vw;
         width: 26vw;
         z-index: 1;
         img {
@@ -158,7 +158,7 @@ body {
         font-family: "Bebas Neue";
     }
     .credits {
-        top: -20vw;
+        top: -13vw;
         position: absolute;
         font-size: 2vw;
         color: rgb(49, 49, 49);
@@ -208,6 +208,22 @@ body {
             background-color: white;
             cursor: pointer;
         }
+    }
+}
+@media only screen and (max-width: 850px) {
+    #headerSvg {
+        margin-bottom: -8vw;
+    }
+    .lower-content {
+        position: relative;
+        margin-left: 67vw;
+        button {
+            padding: 2vw;
+            position: absolute;
+        }
+    }
+    .wheel-container {
+        margin-top: 2vw;
     }
 }
 
